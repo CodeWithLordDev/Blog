@@ -260,7 +260,7 @@ export default function Home() {
               </p>
               <div className="mt-4 flex items-center">
                 <img
-                  src="/path/to/image1.jpg"
+                  src="/Assets/src/john-doe.jpg"
                   alt="User 1"
                   className="w-12 h-12 rounded-full mr-4"
                 />
@@ -281,7 +281,7 @@ export default function Home() {
               </p>
               <div className="mt-4 flex items-center">
                 <img
-                  src="/path/to/image2.jpg"
+                  src="/Assets/src/jane-smith.jpg"
                   alt="User 2"
                   className="w-12 h-12 rounded-full mr-4"
                 />
@@ -302,7 +302,7 @@ export default function Home() {
               </p>
               <div className="mt-4 flex items-center">
                 <img
-                  src="/path/to/image3.jpg"
+                  src="/Assets/src/alex_johnson-headshot.webp"
                   alt="User 3"
                   className="w-12 h-12 rounded-full mr-4"
                 />
