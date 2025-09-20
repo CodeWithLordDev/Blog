@@ -1,3 +1,4 @@
+import Script from "next/script";
 
 import localFont from "next/font/local";
 import "./globals.css";
@@ -6,6 +7,7 @@ import Navbar from "@/components/ui/Navbar";
 import ClientThemeProvider from "../components/ClientThemeProvider";
 import ThemeProvider from "@/components/theme-provider"
 import Footer from "@/components/ui/Footer"
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -56,6 +58,13 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       
           <Navbar />
+          {/* Google AdSense */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2908323046059505"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
           {children}
           <Footer />
         
