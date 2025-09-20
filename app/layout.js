@@ -52,19 +52,26 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
+    <head>
+        {/* ✅ Google AdSense Verification */}
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-2908323046059505"
+        />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2908323046059505"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       
           <Navbar />
-          {/* Google AdSense */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2908323046059505"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        
           {children}
           <Footer />
         
